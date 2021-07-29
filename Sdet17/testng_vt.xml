@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+  <test name="Test 1">
+  <parameter name="brwsr" value="firefox">
+    <classes>
+      <class name="com.crm.vtigerTests.SendMailTest"/>
+      <class name="com.crm.vtigerTests.CreateOrgWithIndustryTest"/>
+      <class name="com.crm.vtigerTests.OrganisationSettingsTest"/>
+    </classes>
+    </parameter>
+  </test> <!-- Test -->
+  
+  <test name="Test 2">
+  <parameter name="brwsr" value="chrome">
+    <classes>
+      <class name="com.crm.vtigerTests.SendMailTest"/>
+      <class name="com.crm.vtigerTests.CreateOrgWithIndustryTest"/>
+      <class name="com.crm.vtigerTests.OrganisationSettingsTest"/>
+    </classes>
+    </parameter>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
